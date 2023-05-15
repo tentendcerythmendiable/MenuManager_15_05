@@ -1,0 +1,16 @@
+﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model MenuManager.Model.Product
+
+@{
+    ViewBag.Title = "Create Product";
+}
+
+<form method="post">
+    <partial name="CreateEditPartial" model="Model"/>
+    <button type="submit">Create</button>
+</form>
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+}
